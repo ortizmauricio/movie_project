@@ -1,6 +1,9 @@
 import movies
 import fresh_tomatoes
-                         
+"""The instances below record the title, storyline, poster image, and trailer
+url for the specified movie. As noted above the class Movie is imported from
+movies.py"""
+
 a_Team = movies.Movie("The A-Team",
                       "A group of long time friend go on an adventure",
                       "https://upload.wikimedia.org/wikipedia/en/e/e8/A_team_poster_10.jpg",
@@ -31,6 +34,10 @@ dark_Knight_rises = movies.Movie("The Dark Knight Rises",
                            "https://upload.wikimedia.org/wikipedia/en/8/83/Dark_knight_rises_poster.jpg",
                            "https://www.youtube.com/watch?v=yFT9r3Zwtek")
 
+"""This list stores the movies in the sequence that they
+will be displayed on when opened on a webpage"""
+
 movies = [a_Team, bourne_Identity, despicable_Me, whiplash, social_Network, dark_Knight_rises]
 
+"""Opens webpage with movies stored in movies list"""
 fresh_tomatoes.open_movies_page(movies)
